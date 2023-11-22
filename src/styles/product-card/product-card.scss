@@ -78,10 +78,13 @@
 
   cursor: pointer;
 
+  transform: rotateZ(0deg);
+  transition: transform ease .5s;
+
 }
 .product-card__button_rotated {
   transform: rotateZ(45deg);
-  transition: rotate ease 1s;
+  transition: transform ease .5s;
 }
 .product-card__added-info {
   height: 0;
