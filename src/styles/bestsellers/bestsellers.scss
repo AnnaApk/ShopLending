@@ -1,0 +1,125 @@
+.bestsellers {
+  @include container-flex-row;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: fit-content;
+  padding: 140px 0 175px 0;
+
+  position: relative;
+
+  overflow: hidden;
+
+  @media (max-width: 1250px) {
+    padding-left: 98px;
+  }
+  @media (max-width: 950px) {
+    padding-top: 120px;
+  }
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    padding: 0;
+  }
+}
+.bestsellers__content {
+  width: 214px;
+
+  @media (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 0 0;
+  }
+}
+.bestsellers__title {
+  @include section-title;
+
+}
+.bestsellers__text {
+  @include section-text;
+  margin: 30px auto 40px 0;
+
+  @media (max-width: 600px) {
+    margin: 25px auto 50px;
+    text-align: center;
+  }
+}
+
+.galary-container {
+  position: relative;
+  overflow: hidden;
+
+  width: 100vw;
+  height: 312px;
+  margin-left: 30px;
+
+  @media (max-width:600px) {
+    width: 90vw;
+    margin: 50px 0 160px;
+  }
+}
+
+.bestsellers__galary {
+  @include container-flex-row;
+
+  list-style: none;
+  margin: 0;
+  position: absolute;
+  padding: 0;
+
+  top: 0;
+  left: 0;
+}
+
+.bestsellers__el {
+  width: 230px;
+  height: 312px;
+  position: relative;
+  
+  overflow: hidden;
+
+  margin-right: 30px;
+
+  display: flex;
+  justify-content: center;
+}
+.bestsellers__el-description-group {
+  position: absolute;
+  bottom: 25px;
+  text-align: center;
+}
+.bestsellers__el-name{
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 145%;
+}
+.bestsellers__el-catagory{
+  color: #9A9DA0;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 145%;
+}
+.bestsellers__link{
+  @include reset-link-style;
+  border-bottom: 1px solid;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 145%;
+}
+.bestsellers__galary-control {
+  @include container-flex-row;
+  width: 84px;
+  position: absolute;
+  bottom: -40px;
+  right: 98px;
+
+  // @media (max-width:600px) {
+  //   top: 245px;
+  //   right: unset;
+  //   bottom: unset;
+  // }
+}

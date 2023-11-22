@@ -1,0 +1,84 @@
+@import url('../fonts/montserrat.scss');
+
+@import '_consts.scss';
+
+@import '_extends.scss';
+
+@import './body/body.scss';
+@import './header/header.scss';
+@import './main-screen/main-screen.scss';
+@import './nav/nav.scss';
+@import './bestsellers/bestsellers.scss';
+@import './banner/banner.scss';
+@import './rectangle-box/rectangle-box.scss';
+@import './personal-care/personal-care.scss';
+@import './banner-history/banner-history.scss';
+@import './join/join.scss';
+@import './contacts/contacts.scss';
+@import './social-media/social-media.scss';
+@import './iframe-map/iframe-map.scss';
+@import './footer/footer.scss';
+
+@import './catalog/catalog.scss';
+@import './filters/filters.scss';
+@import './have-seen/have-seen.scss';
+
+@import './product-card/product-card.scss';
+
+@import './burger/burger.scss';
+
+@import './empty-box/empty-box.scss';
+
+.button {
+  @include reset-button-style;
+}
+
+.button:disabled {
+  opacity: .5;
+  cursor: none;
+}
+
+.link {
+  @include reset-link-style;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+
+  padding: 16px 27px;
+
+  border-radius: 2px;
+  border: 1px solid #B3BAC1;
+
+  background: unset;
+  cursor: pointer;
+
+  @media (max-width:760px) {
+    font-size: 14px;
+  }
+
+  @media (max-width:600px) {
+    font-size: 14px;
+    line-height: normal;
+    padding: 13px 27px;
+  }
+}
+.link_bestsellers {
+  @media (max-width: 600px) {
+    position: absolute;
+    bottom: 80px;
+  }
+}
+.filters-btn {
+  border: none;
+  background-color: unset;
+  cursor: pointer;
+}
+.swiper-prev,
+.swiper-next {
+  position: absolute;
+  color: #122947;
+}
+.swiper-prev::after,
+.swiper-next::after {
+  opacity: .8;
+}

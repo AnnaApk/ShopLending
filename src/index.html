@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body class="body">
+
+  <header >
+    <div class="header">
+
+      <button class="burger__open">
+        <hr>
+      </button>
+      <div class="popup popup_left">
+        <nav class="nav nav_burger">
+          <a class="nav__link nav__link_burger" href="catalog.html">Каталог</a>
+          <a class="nav__link nav__link_burger" href="not-found.html">О нас</a>
+          <a class="nav__link nav__link_burger" href="#contacts">Контакты</a>
+        </nav>
+        <div class="social-media" style="padding-left: 45px;">
+          <a class="social-media__link" href="https://www.facebook.com/" target="_blank">
+            <img src="<%=require('./images/facebook.svg')%>" alt="Иконка фэйсбука">
+          </a>
+          <a class="social-media__link" href="https://www.instagram.com/" target="_blank">
+            <img src="<%=require('./images/instagram.svg')%>" alt="Иконка инстаграмма">
+          </a>
+          <a class="social-media__link" href="https://www.twitter.com/" target="_blank">
+            <img src="<%=require('./images/tviter.svg')%>" alt="Иконка твитера">
+          </a>
+        </div>
+      </div>
+
+      <img class="header__logo" src="<%=require('./images/MAROON-logo.svg')%>" alt="лого">
+      <div class="header__container">
+        <nav class="nav nav_header">
+          <a class="nav__link" href="catalog.html" id="catalog-header">Каталог</a>
+          <a class="nav__link" href="not-found.html" id="about-us-header">О нас</a>
+          <a class="nav__link" href="#contacts" id="contacts-header">Контакты</a>
+        </nav>
+        <div class="header__container header__container_buttons">
+          <button class="button">
+            <img src="<%=require('./images/ikon-auth.svg')%>" alt="Authorization">
+          </button>
+          <button class="button">
+            <img src="<%=require('./images/ikon-basket.svg')%>" alt="Basket with purchases">
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+
+    <section class="main-screen" >
+      <div class="main-screen__container">
+        <figure class="main-screen__figure">
+          <img class="main-screen__img" src="<%=require('./images/face-care-mane-screen.jpg')%>" alt="Уход для лица. Баночки">
+          <div class="main-screen__s-container">
+            <a class="main-screen__figcaption" href="catalog.html" style="text-decoration: none;color: #122947">Уход для лица</a>
+            <a href="catalog.html" class="main-screen__arrow">
+              <img src="<%=require('./images/arrow-to-left.svg')%>" alt="Стрелочка на лево">
+            </a>
+          </div>
+        </figure>
+        <div class="main-screen__content">
+          <h1 class="main-screen__title">MAROON</h1>
+          <p class="main-screen__text">Натуральная косметика для бережного ухода за кожей</p>
+          <a href="not-found.html" class="link">Подробнее</a>
+        </div>
+        <figure class="main-screen__figure">
+          <img class="main-screen__img" src="<%=require('./images/body-care-main-screen.jpg')%>" alt="Уход для тела. Баночки">
+          <div class="main-screen__s-container">
+            <a class="main-screen__figcaption" href="catalog.html" style="text-decoration: none;color: #122947">Уход для тела</a>
+            <a href="catalog.html" class="main-screen__arrow">
+              <img src="<%=require('./images/arrow-to-left.svg')%>" alt="Стрелочка на лево">
+            </a>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <section class="bestsellers">
+      <div class="bestsellers__content">
+        <h2 class="bestsellers__title">Бестселлеры</h2>
+        <p class="bestsellers__text">Легендарные продукты, завоевавшие любовь наших клиентов</p>
+        <a href="catalog.html" class="link link_bestsellers">Смотреть все</a>
+      </div>
+      <div class="swiper galary-container">
+        
+          <ul class="swiper-wrapper bestsellers__galary">
+            <li class="swiper-slide bestsellers__el">
+              <img class="bestsellers__image" src="<%=require('./images/high.jpg')%>" alt="Баночка крема">
+              <div class="bestsellers__el-description-group">
+                <h3 class="bestsellers__el-name">High</h3>
+                <p class="bestsellers__el-catagory">крем для лица</p>
+                <a class="bestsellers__link" href="product-card.html">Подробнее</a>
+              </div>
+            </li>
+            <li class="swiper-slide bestsellers__el">
+              <img src="<%=require('./images/rest.jpg')%>" alt="Баночка крема">
+              <div class="bestsellers__el-description-group">
+                <h3 class="bestsellers__el-name">Rest</h3>
+                <p class="bestsellers__el-catagory">минеральная пудра</p>
+                <a class="bestsellers__link" href="product-card.html">Подробнее</a>
+              </div>
+            </li>
+            <li class="swiper-slide bestsellers__el">
+              <img src="<%=require('./images/rose.jpg')%>" alt="Баночка крема">
+              <div class="bestsellers__el-description-group">
+                <h3 class="bestsellers__el-name">Rose</h3>
+                <p class="bestsellers__el-catagory">крем для лица</p>
+                <a class="bestsellers__link" href="product-card.html">Подробнее</a>
+              </div>
+            </li>
+            <li class="swiper-slide bestsellers__el">
+              <img src="<%=require('./images/milk.jpg')%>" alt="Баночка крема">
+              <div class="bestsellers__el-description-group">
+                <h3 class="bestsellers__el-name">Milk</h3>
+                <p class="bestsellers__el-catagory">масло для тела</p>
+                <a class="bestsellers__link" href="product-card.html">Подробнее</a>
+              </div>
+            </li>
+            <li class="swiper-slide bestsellers__el">
+              <img class="bestsellers__image" src="<%=require('./images/high.jpg')%>" alt="Баночка крема">
+              <div class="bestsellers__el-description-group">
+                <h3 class="bestsellers__el-name">High</h3>
+                <p class="bestsellers__el-catagory">крем для лица</p>
+                <a class="bestsellers__link" href="product-card.html">Подробнее</a>
+              </div>
+            </li>
+            <li class="swiper-slide bestsellers__el">
+              <img src="<%=require('./images/rest.jpg')%>" alt="Баночка крема">
+              <div class="bestsellers__el-description-group">
+                <h3 class="bestsellers__el-name">Rest</h3>
+                <p class="bestsellers__el-catagory">минеральная пудра</p>
+                <a class="bestsellers__link" href="product-card.html">Подробнее</a>
+              </div>
+            </li>
+          </ul>
+
+        <div class="swiper-button-prev swiper-prev"></div>
+        <div class="swiper-button-next swiper-next"></div>
+      </div>
+    </section>
+
+    <section class="banner">
+      <div class="banner__content">
+        <h2 class="banner__title">Встречайте весну вместе с нами</h2>
+        <p class="banner__text">Попробуйте новую коллекцию ухаживающих средств для лица с SPF защитой</p>
+        <a href="catalog.html" class="link">Подробнее</a>
+      </div>
+    </section>
+
+    <section class="personal-care">
+      <div class="rectangle-box">
+        <h2 class="rectangle-box__title">Индивидуальный уход</h2>
+        <p class="rectangle-box__text rectangle-box__text_dissapied">Не всегда очевидно, какие элементы и минералы необходимы коже, а многочисленные эксперименты с разными средствами только ухудшают ее качество. </p>
+        <p class="rectangle-box__text rectangle-box__text_last">Заполните анкету, и мы подберем уход, подходящий именно вам, учитывая ваш образ жизни, место жительства и другие факторы. </p>
+        <a href="not-found.html" class="link">Заполнить анкету</a>
+      </div>
+      <div class="personal-care__img"></div>
+    </section>
+
+    <section class="banner-history">
+      <div class="banner-history__content">
+        <q class="banner-history__title">Мы стремимся сделать уход за кожей доступным и приятным ритуалом для всех, кто хочет заботиться о себе и своем теле</q>
+        <a href="not-found.html" class="link">Наша история</a>
+      </div>
+    </section>
+
+    <section class="join">
+      <div class="join__group-images">
+        <img class="join__image" src="<%=require('./images/6-1.png')%>" alt="">
+        <img class="join__image" src="<%=require('./images/6-2.png')%>" alt="">
+        <img class="join__image" src="<%=require('./images/6-3.png')%>" alt="">
+        <img class="join__image" src="<%=require('./images/6-4.png')%>" alt="">
+        <img class="join__image" src="<%=require('./images/6-5.png')%>" alt="">
+        <img class="join__image" src="<%=require('./images/6-6.png')%>" alt="">
+      </div>
+      <div class="join__content">
+        <h2 class="join__title">Присоединяйтесь к нам</h2>
+        <p class="join__text">Подпишитесь на наш аккаунт @marooncare и узнавайте о новиках и акциях первыми</p>
+        <a class="link" href="https://www.instagram.com/" target="_blank">Подписаться</a>
+      </div>
+    </section>
+
+    <section class="contacts" id="contacts">
+      <div class="rectangle-box">
+        <h2 class="rectangle-box__title">Контакты</h2>
+        <h3 class="rectangle-box__subtitle">Адрес</h3>
+        <p class="rectangle-box__text">Санкт-Петербург, ул. Большая Конюшенная, 19</p>
+        <h3 class="rectangle-box__subtitle">Телефон</h3>
+        <a href="tel:+79238889060" class="rectangle-box__text">+7 (923) 888-90-60</a>
+        <h3 class="rectangle-box__subtitle">E-mail</h3>
+        <a href="mailto:www.info@maroon.ru" class="rectangle-box__text">info@maroon.ru</a>
+        <div class="social-media">
+          <a class="social-media__link" href="https://www.facebook.com/" target="_blank">
+            <img src="<%=require('./images/facebook.svg')%>" alt="Иконка фэйсбука">
+          </a>
+          <a class="social-media__link" href="https://www.instagram.com/" target="_blank">
+            <img src="<%=require('./images/instagram.svg')%>" alt="Иконка инстаграмма">
+          </a>
+          <a class="social-media__link" href="https://www.twitter.com/" target="_blank">
+            <img src="<%=require('./images/tviter.svg')%>" alt="Иконка твитера">
+          </a>
+        </div>
+      </div>
+      <iframe class="iframe-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989428318715!2d30.3205083768062!3d59.93879686208788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2srs!4v1695893314595!5m2!1sru!2srs" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__main">
+      <img src="<%=require('./images/MAROON-logo.svg')%>" alt="лого">
+      <nav class="nav nav_footer">
+        <a class="nav__link" href="catalog.html">Каталог</a>
+        <a class="nav__link" href="not-found.html">О нас</a>
+        <a class="nav__link" href="#contacts">Магазины</a>
+        <a class="nav__link" href="#contacts">Контакты</a>
+      </nav>
+      <div class="social-media">
+        <a class="social-media__link" href="https://www.facebook.com/" target="_blank">
+          <img src="<%=require('./images/facebook.svg')%>" alt="Иконка фэйсбука">
+        </a>
+        <a class="social-media__link" href="https://www.instagram.com/" target="_blank">
+          <img src="<%=require('./images/instagram.svg')%>" alt="Иконка инстаграмма">
+        </a>
+        <a class="social-media__link" href="https://www.twitter.com/" target="_blank">
+          <img src="<%=require('./images/tviter.svg')%>" alt="Иконка твитера">
+        </a>
+      </div>
+    </div>
+    <hr style="width: 100vw; position: absolute; left: 0; margin: 0;">
+    <div class="footer__sign">
+      <p class="footer__sign-text" >Maroon &#169; 2020 Все права защищены</p>
+      <p class="footer__sign-text">Политика конфиденциальности</p>
+    </div>
+  </footer>
+
+</body>
+</html>

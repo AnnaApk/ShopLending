@@ -1,0 +1,9 @@
+.social-media {
+  @include container-flex-row;
+  width: 120px;
+  margin-top: 25px;
+}
+
+.social-media__link {
+  @include reset-link-style;
+}

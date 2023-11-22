@@ -1,0 +1,46 @@
+header {
+  position: absolute;
+  width: inherit;
+  z-index: 4;
+}
+.header {
+  @include container-flex-row;
+  
+  max-width: 1170px;
+
+  height: 21px;
+
+  margin: 40px auto 0;
+  padding: 0 30px;
+
+  @media (max-width: 400px) {
+    margin: 30px auto 0;
+    padding: 0 15px;
+  }
+}
+
+.header__container {
+  @include container-flex-row;
+  min-width: 430px;
+
+  @media (max-width: 800px) {
+    min-width: fit-content;
+  }
+}
+
+.header__container_buttons {
+  @include container-flex-row;
+
+  min-width: 64px;
+
+  @media (max-width: 400px) {
+    min-width: 54px;
+  }
+}
+
+.header__logo {
+  @media (max-width: 400px) {
+    width: 85px;
+    height: 13px;
+  }
+}

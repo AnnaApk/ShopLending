@@ -1,0 +1,36 @@
+.have-seen {
+  margin: 0 auto;
+  width: fit-content;
+}
+.have-seen__title {
+  margin: 100px auto 60px;
+  width: max-content;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  @media (max-width: 600px) {
+    font-size: 20px;
+    margin: 80px auto 40px;
+  }
+}
+.have-seen__list {
+  margin: 0;
+  padding: 0;
+
+  display: grid;
+  grid: repeat(1,350px) / repeat(4, 1fr);
+  gap: 30px;
+  height: 350px;
+  overflow: hidden;
+
+  @media (max-width:1200px) {
+    grid: repeat(1, auto) / repeat(2, auto);
+    width: max-content;
+    height: fit-content;
+    margin: 0 auto;
+  }
+  @media (max-width:700px) {
+    grid: repeat(1, auto) / repeat(1, auto);
+  }
+}

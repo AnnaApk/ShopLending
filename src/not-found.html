@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body class="body">
+  <header >
+    <div class="header">
+
+      <button class="burger__open">
+        <hr>
+      </button>
+      <div class="popup popup_left">
+        <nav class="nav nav_burger">
+          <a class="nav__link nav__link_burger" href="catalog.html">Каталог</a>
+          <a class="nav__link nav__link_burger" href="not-found.html">О нас</a>
+          <a class="nav__link nav__link_burger" href="index.html#contacts">Контакты</a>
+        </nav>
+        <div class="social-media" style="padding-left: 45px;">
+          <a class="social-media__link" href="https://www.facebook.com/" target="_blank">
+            <img src="<%=require('./images/facebook.svg')%>" alt="Иконка фэйсбука">
+          </a>
+          <a class="social-media__link" href="https://www.instagram.com/" target="_blank">
+            <img src="<%=require('./images/instagram.svg')%>" alt="Иконка инстаграмма">
+          </a>
+          <a class="social-media__link" href="https://www.twitter.com/" target="_blank">
+            <img src="<%=require('./images/tviter.svg')%>" alt="Иконка твитера">
+          </a>
+        </div>
+      </div>
+
+      <a href="index.html" class="button">
+        <img class="header__logo" src="<%=require('./images/MAROON-logo.svg')%>" alt="лого">
+      </a>
+      <div class="header__container">
+        <nav class="nav nav_header">
+          <a class="nav__link" href="catalog.html" id="catalog-header">Каталог</a>
+          <a class="nav__link" href="not-found.html" id="about-us-header">О нас</a>
+          <a class="nav__link" href="index.html#contacts" id="contacts-header">Контакты</a>
+        </nav>
+        <div class="header__container header__container_buttons">
+          <button class="button">
+            <img src="<%=require('./images/ikon-auth.svg')%>" alt="Authorization">
+          </button>
+          <button class="button">
+            <img src="<%=require('./images/ikon-basket.svg')%>" alt="Basket with purchases">
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <hr style="margin: 0; position: absolute; top: 101px; left: 0; width: 100vw;">
+  <div class="body__content-container">
+    
+    <main style="margin: auto; text-align: center; font-size: 35px;">
+      <h1 style="font-weight: 300;">Not Found<br>404</h1>
+      <a href="index.html" style="font-size: 20px; color: #122947;">Вернуться на Главную страницу</a>
+    </main>
+  
+    <footer class="footer">
+      <div class="footer__main">
+        <a href="index.html" class="button">
+          <img src="<%=require('./images/MAROON-logo.svg')%>" alt="лого">
+        </a>
+        <nav class="nav nav_footer">
+          <a class="nav__link" href="catalog.html">Каталог</a>
+          <a class="nav__link" href="not-found.html">О нас</a>
+          <a class="nav__link" href="index.html#contacts">Магазины</a>
+          <a class="nav__link" href="index.html#contacts">Контакты</a>
+        </nav>
+        <div class="social-media">
+          <a class="social-media__link" href="https://www.facebook.com/" target="_blank">
+            <img src="<%=require('./images/facebook.svg')%>" alt="Иконка фэйсбука">
+          </a>
+          <a class="social-media__link" href="https://www.instagram.com/" target="_blank">
+            <img src="<%=require('./images/instagram.svg')%>" alt="Иконка инстаграмма">
+          </a>
+          <a class="social-media__link" href="https://www.twitter.com/" target="_blank">
+            <img src="<%=require('./images/tviter.svg')%>" alt="Иконка твитера">
+          </a>
+        </div>
+      </div>
+      <hr style="width: 100vw; position: absolute; left: 0; margin: 0;">
+      <div class="footer__sign">
+        <p class="footer__sign-text" >Maroon &#169; 2020 Все права защищены</p>
+        <p class="footer__sign-text">Политика конфиденциальности</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

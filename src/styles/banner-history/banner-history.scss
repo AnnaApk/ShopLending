@@ -1,0 +1,33 @@
+.banner-history {
+  height: 433px;
+
+  background-image: url('../images/banner-history.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media (max-width: 400px) {
+    background-position: right;
+  }
+}
+
+.banner-history__content {
+  max-width: 761px;
+  text-align: center;
+  margin: 0 auto;
+
+  @media (max-width: 800px) {
+    padding: 0 20px;
+  }
+}
+
+.banner-history__title {
+  @include section-title;
+  display: inline-block;
+  margin: 120px 0 50px;
+
+  @media (max-width: 400px) {
+    margin: 60px 0 30px;
+    font-size: 22px;
+  }
+}

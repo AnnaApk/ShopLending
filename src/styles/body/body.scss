@@ -1,0 +1,21 @@
+@import '../_consts.scss';
+
+.body {
+  margin: 0;
+
+  width: 100vw;
+  height: max-content;
+  
+  background-color: $fill-background-color;
+
+  color: $font-color;
+  font-family: 'Montserrat', 'Arial', 'Helvetica', sans-serif;
+
+  position: relative;  
+}
+.body__content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}

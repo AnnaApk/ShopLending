@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body class="body" id="catalog-page">
+ 
+  <header >
+    <div class="header">
+
+      <button class="burger__open">
+        <hr>
+      </button>
+      <div class="popup popup_left">
+        <nav class="nav nav_burger">
+          <a class="nav__link nav__link_burger" href="catalog.html">Каталог</a>
+          <a class="nav__link nav__link_burger" href="not-found.html">О нас</a>
+          <a class="nav__link nav__link_burger" href="#contacts-catalog">Контакты</a>
+        </nav>
+        <div class="social-media" style="padding-left: 45px;">
+          <a class="social-media__link" href="https://www.facebook.com/" target="_blank">
+            <img src="<%=require('./images/facebook.svg')%>" alt="Иконка фэйсбука">
+          </a>
+          <a class="social-media__link" href="https://www.instagram.com/" target="_blank">
+            <img src="<%=require('./images/instagram.svg')%>" alt="Иконка инстаграмма">
+          </a>
+          <a class="social-media__link" href="https://www.facebook.com/" target="_blank">
+            <img src="<%=require('./images/tviter.svg')%>" alt="Иконка твитера">
+          </a>
+        </div>
+      </div>
+
+      <a href="index.html" class="button">
+        <img class="header__logo" src="<%=require('./images/MAROON-logo.svg')%>" alt="лого">
+      </a>
+      <div class="header__container">
+        <nav class="nav nav_header">
+          <a class="nav__link" href="catalog.html" id="catalog-header">Каталог</a>
+          <a class="nav__link" href="not-found.html" id="about-us-header">О нас</a>
+          <a class="nav__link" href="#contacts-catalog" id="contacts-header">Контакты</a>
+        </nav>
+        <div class="header__container header__container_buttons">
+          <button class="button">
+            <img src="<%=require('./images/ikon-auth.svg')%>" alt="Authorization">
+          </button>
+          <button class="button">
+            <img src="<%=require('./images/ikon-basket.svg')%>" alt="Basket with purchases">
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="catalog" >
+      <hr style="margin: 0; position: absolute; top: 101px; left: 0; width: 100vw;">
+      <div class="popup popup_filters">
+        <div class="catalog__title-container popup__filters-title">
+          <h2 class="catalog__title">Каталог</h2>
+          <button  class="popup-close-btn">x</button>
+        </div>
+      
+        <form >
+          <div class="filters">
+
+            <fieldset class="filters__group">
+              <div class="filters__title-grp">
+                Уход для лица
+                <button class="product-card__button filters__open-chbx-btn" id="filters_open_checkbox-face">+</button>
+              </div>
+              <div class="filters__group-container filters__group-container_off" id="filters_checkbox-face">
+                <label class="filters__checkbox">
+                  <input type="checkbox" name="browser" value="ie" id="ie">
+                  Крема
+                </label>
+                <label class="filters__checkbox">
+                  <input type="checkbox" name="browser" value="opera" id="opera">
+                  Сыворотки
+                </label>
+                <label class="filters__checkbox">
+                  <input type="checkbox" name="browser" value="firefox" id="firefox">
+                  Маски
+                </label>
+                <label class="filters__checkbox">
+                  <input type="checkbox" name="browser" value="firefox" id="">
+                  Пенки
+                </label>
+                <label class="filters__checkbox">
+                  <input type="checkbox" name="browser" value="firefox" id="">
+                  Тоники
+                </label>
+                <label class="filters__checkbox">
+                  <input type="checkbox" name="browser" value="firefox" id="">
+                  Пудры
+                </label>
+              </div>
+            </fieldset>
+
+            <fieldset class="filters__group">
+              <div class="filters__title-grp">
+                Уход для тела
+                <button class="product-card__button filters__open-chbx-btn" id="filters_open_checkbox-body">+</button>
+              </div>
+              <div class="filters__group-container filters__group-container_off" id="filters_checkbox-body">
+                <label class="filters__checkbox">
+                  <input type="checkbox" name="browser" value="ie" id="">
+                  Крема
+                </label>
+                <label class="filters__checkbox">
+                  <input type="checkbox" name="browser" value="opera" id="">
+                  Масла
+                </label>
+                <label class="filters__checkbox">
+                  <input type="checkbox" name="browser" value="firefox" id="">
+                  Скрабы
+                </label>
+                <label class="filters__checkbox">
+                  <input type="checkbox" name="browser" value="firefox" id="">
+                  Мыло
+                </label>
+                <label class="filters__checkbox">
+                  <input type="checkbox" name="browser" value="firefox" id="">
+                  Бомбочки для ванны
+                </label>
+                <label class="filters__checkbox">
+                  <input type="checkbox" name="browser" value="firefox" id="">
+                  Соль для ванны
+                </label>
+              </div>
+            </fieldset>
+
+            <fieldset class="filters__group">
+              <div class="filters__title-grp">
+                Тип кожи
+                <button class="product-card__button filters__open-chbx-btn" id="filters_open_checkbox-skin">+</button>
+              </div>             
+              <div class="filters__group-container filters__group-container_off" id="filters_checkbox-skin">
+                <label class="filters__checkbox">
+                  <input type="checkbox" name="browser" value="ie" id="">
+                  Нормальная
+                </label>
+                <label class="filters__checkbox">
+                  <input type="checkbox" name="browser" value="opera" id="">
+                  Сухая
+                </label>
+                <label class="filters__checkbox">
+                  <input type="checkbox" name="browser" value="firefox" id="">
+                  Жирная
+                </label>
+                <label class="filters__checkbox">
+                  <input type="checkbox" name="browser" value="firefox" id="">
+                  Комбинированная 
+                </label>
+              </div>
+            </fieldset>
+          </div>
+          <div class="filters__btns">
+            <button type="submit" class="link">Применить</button>
+            <button type="reset" class="link">Сбросить</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="catalog__title-container">
+        <h2 class="catalog__title">Каталог</h2>
+        <button class="link filters-btn">Фильтр</button>
+      </div>
+      <div style="max-width: fit-content; margin: 0 auto;">
+        <ul class="catalog__list">
+          <template id="product">
+            <li class="catalog__product-card">
+              <a href="product-card.html">
+                <img class="catalog__product-img" alt="">
+                <div class="catalog__product-info">
+                  <h3 class="catalog__product-name"></h3>
+                  <p class="catalog__product-price"></p>
+                  <p class="catalog__product-use"></p>
+                  <p class="catalog__product-volume"></p>
+                </div>
+              </a>              
+            </li>
+          </template>
+        </ul>
+        <div class="catalog__pages-cntrl">
+          <p class="catalog__current-page">X</p>
+          <hr class="catalog__hr">
+          <p class="catalog__all-count-pages">Y</p>
+          <div class="catalog__galary-control">
+            <button class="button" id="catalog-btn-prev" disabled>
+              <img src="<%=require('./images/arrow-to-right.svg')%>" alt="Стрелочка на право">
+            </button>
+            <button class="button" id="catalog-btn-next">
+              <img src="<%=require('./images/arrow-to-left.svg')%>" alt="Стрелочка на лево">
+            </button>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    <section class="have-seen">
+      <h2 class="have-seen__title">Вы недавно смотрели</h2>
+      <div style="width: fit-content; margin: 0 auto;">
+        <ul class="have-seen__list">
+          <template id="have-seen-template">
+            <li class="have-seen__product-card">
+              <a href="product-card.html">
+                <img class="catalog__product-img animation" alt="">
+                <div class="catalog__product-info">
+                  <h3 class="catalog__product-name"></h3>
+                  <p class="catalog__product-price"></p>
+                  <p class="catalog__product-use"></p>
+                  <p class="catalog__product-volume"></p>
+                </div>
+              </a>              
+            </li>
+          </template>
+        </ul>
+        <div class="catalog__pages-cntrl">
+          <p class="have-seen__current-page">X</p>
+          <hr class="catalog__hr">
+          <p class="have-seen__all-count-pages">Y</p>
+          <div class="catalog__galary-control">
+            <button class="button" id="have-seen-btn-prev" disabled>
+              <img src="<%=require('./images/arrow-to-right.svg')%>" alt="Стрелочка на право">
+            </button>
+            <button class="button" id="have-seen-btn-next">
+              <img src="<%=require('./images/arrow-to-left.svg')%>" alt="Стрелочка на лево">
+            </button>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    <section class="join">
+      <div class="join__group-images">
+        <img class="join__image" src="<%=require('./images/6-1.png')%>" alt="">
+        <img class="join__image" src="<%=require('./images/6-2.png')%>" alt="">
+        <img class="join__image" src="<%=require('./images/6-3.png')%>" alt="">
+        <img class="join__image" src="<%=require('./images/6-4.png')%>" alt="">
+        <img class="join__image" src="<%=require('./images/6-5.png')%>" alt="">
+        <img class="join__image" src="<%=require('./images/6-6.png')%>" alt="">
+      </div>
+      <div class="join__content">
+        <h2 class="join__title">Присоединяйтесь к нам</h2>
+        <p class="join__text">Подпишитесь на наш аккаунт @marooncare и узнавайте о новиках и акциях первыми</p>
+        <a class="link" href="https://www.instagram.com/" target="_blank">Подписаться</a>
+      </div>
+    </section>
+
+    <section class="contacts" id="contacts-catalog">
+      <div class="rectangle-box">
+        <h2 class="rectangle-box__title">Контакты</h2>
+        <h3 class="rectangle-box__subtitle">Адрес</h3>
+        <p class="rectangle-box__text">Санкт-Петербург, ул. Большая Конюшенная, 19</p>
+        <h3 class="rectangle-box__subtitle">Телефон</h3>
+        <a href="tel:+79238889060" class="rectangle-box__text">+7 (923) 888-90-60</a>
+        <h3 class="rectangle-box__subtitle">E-mail</h3>
+        <a href="mailto:www.info@maroon.ru" class="rectangle-box__text">info@maroon.ru</a>
+        <div class="social-media">
+          <a class="social-media__link" href="https://www.facebook.com/" target="_blank">
+            <img src="<%=require('./images/facebook.svg')%>" alt="Иконка фэйсбука">
+          </a>
+          <a class="social-media__link" href="https://www.facebook.com/" target="_blank">
+            <img src="<%=require('./images/instagram.svg')%>" alt="Иконка инстаграмма">
+          </a>
+          <a class="social-media__link" href="https://www.facebook.com/" target="_blank">
+            <img src="<%=require('./images/tviter.svg')%>" alt="Иконка твитера">
+          </a>
+        </div>
+      </div>
+      <iframe class="iframe-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989428318715!2d30.3205083768062!3d59.93879686208788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2srs!4v1695893314595!5m2!1sru!2srs" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__main">
+      <a href="index.html" class="button">
+        <img src="<%=require('./images/MAROON-logo.svg')%>" alt="лого">
+      </a>
+      <nav class="nav nav_footer">
+        <a class="nav__link" href="catalog.html">Каталог</a>
+        <a class="nav__link" href="not-found.html">О нас</a>
+        <a class="nav__link" href="#contacts-catalog">Магазины</a>
+        <a class="nav__link" href="#contacts-catalog">Контакты</a>
+      </nav>
+      <div class="social-media">
+        <a class="social-media__link" href="https://www.facebook.com/" target="_blank">
+          <img src="<%=require('./images/facebook.svg')%>" alt="Иконка фэйсбука">
+        </a>
+        <a class="social-media__link" href="https://www.instagram.com/" target="_blank">
+          <img src="<%=require('./images/instagram.svg')%>" alt="Иконка инстаграмма">
+        </a>
+        <a class="social-media__link" href="https://www.twitter.com/" target="_blank">
+          <img src="<%=require('./images/tviter.svg')%>" alt="Иконка твитера">
+        </a>
+      </div>
+    </div>
+    <hr style="width: 100vw; position: absolute; left: 0; margin: 0;">
+    <div class="footer__sign">
+      <p class="footer__sign-text" >Maroon &#169; 2020 Все права защищены</p>
+      <p class="footer__sign-text">Политика конфиденциальности</p>
+    </div>
+  </footer>
+
+</body>
+</html>

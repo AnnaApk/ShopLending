@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body class="body" id="product-card-page">
+  <header >
+    <div class="header">
+
+      <button class="burger__open">
+        <hr>
+      </button>
+      <div class="popup popup_left">
+        <nav class="nav nav_burger">
+          <a class="nav__link nav__link_burger" href="catalog.html">Каталог</a>
+          <a class="nav__link nav__link_burger" href="not-found.html">О нас</a>
+          <a class="nav__link nav__link_burger" href="index.html#contacts">Контакты</a>
+        </nav>
+        <div class="social-media" style="padding-left: 45px;">
+          <a class="social-media__link" href="https://www.facebook.com/" target="_blank">
+            <img src="<%=require('./images/facebook.svg')%>" alt="Иконка фэйсбука">
+          </a>
+          <a class="social-media__link" href="https://www.instagram.com/" target="_blank">
+            <img src="<%=require('./images/instagram.svg')%>" alt="Иконка инстаграмма">
+          </a>
+          <a class="social-media__link" href="https://www.twitter.com/" target="_blank">
+            <img src="<%=require('./images/tviter.svg')%>" alt="Иконка твитера">
+          </a>
+        </div>
+      </div>
+
+      <a href="index.html" class="button">
+        <img class="header__logo" src="<%=require('./images/MAROON-logo.svg')%>" alt="лого">
+      </a>
+      <div class="header__container">
+        <nav class="nav nav_header">
+          <a class="nav__link" href="catalog.html" id="catalog-header">Каталог</a>
+          <a class="nav__link" href="not-found.html" id="about-us-header">О нас</a>
+          <a class="nav__link" href="index.html#contacts" id="contacts-header">Контакты</a>
+        </nav>
+        <div class="header__container header__container_buttons">
+          <button class="button">
+            <img src="<%=require('./images/ikon-auth.svg')%>" alt="Authorization">
+          </button>
+          <button class="button">
+            <img src="<%=require('./images/ikon-basket.svg')%>" alt="Basket with purchases">
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <hr style="margin: 0; position: absolute; top: 101px; left: 0; width: 100vw;">
+  <!-- <div class="body__content-container"> -->
+    
+    <main>
+      <section class="product-card">
+        <div class="product-card__img-container">
+          <img class="product-card__img" src="<%=require('./images/rose-big.jpg')%>" alt="rose">
+        </div>
+        <div class="product-card__content">
+          <h2 class="product-card__title">Rose</h2>
+          <p class="product-card__subtitle">крем для лица</p>
+          <p class="product-card__text">Увлажняющий крем идеально подходит для повседневного ухода за молодой кожей. <br> Крем равномерно распределяется по поверхности благодаря легкой текстуре, обеспечивает глубокое увлажнение, регенерацию клеток. </p>
+          <hr style="margin: 0;background: #B3BAC1;">
+          <div class="product-card__container-s">
+            <p>Состав</p>
+            <button class="product-card__button" id="product-card-open-consist">+</button>
+          </div>
+          <div class="product-card__added-info" id="product-card-consist">
+            Aqua, Cyclomethicone, Dicaprylyl Carbonate, Butylene Glycol, Glycerin, Tapioca Starch, Nelumbium Speciosum Flower Extract, Calendula Officinalis Flower Extract, Propylene Glycol, Tocopherol, Glycine Soja Oil, Dimethiconol, Citronellol, Limonene.
+          </div>
+          <hr style="margin: 0;background: #B3BAC1;">
+          <div class="product-card__container-s">
+            <p>Способ применения</p>
+            <button class="product-card__button" id="product-card-open-using">+</button>
+          </div>
+          <div class="product-card__added-info" id="product-card-using">
+            Нанесите крем на очищенную кожу лица легкими массажными круговыми движениями, избегая области вокруг глаз. Подходит для дневного и ночного ухода. 
+          </div>
+          <hr style="margin: 0;background: #B3BAC1;">
+          <form >
+            <fieldset class="product-card__volum-choise">
+              Объем:
+              <label class="filters__checkbox">
+                <input type="radio" name="browser" value="ie" id="ie" checked>
+                50 ml
+              </label>
+              <label class="filters__checkbox">
+                <input type="radio" name="browser" value="opera" id="opera">
+                30 ml
+              </label>
+            </fieldset>
+            <div class="product-card__container-s">
+              <p class="product-card__price">890 P</p>
+              <button class="link">Добавить в корзину</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="have-seen">
+        <h2 class="have-seen__title">Вы недавно смотрели</h2>
+        <div style="width: fit-content; margin: 0 auto;">
+          <ul class="have-seen__list">
+            <template id="have-seen-template">
+              <li class="have-seen__product-card">
+                <a href="product-card.html">
+                  <img class="catalog__product-img" alt="">
+                  <div class="catalog__product-info">
+                    <h3 class="catalog__product-name"></h3>
+                    <p class="catalog__product-price"></p>
+                    <p class="catalog__product-use"></p>
+                    <p class="catalog__product-volume"></p>
+                  </div>
+                </a>              
+              </li>
+            </template>
+          </ul>
+          <div class="catalog__pages-cntrl">
+            <p class="have-seen__current-page">X</p>
+            <hr class="catalog__hr">
+            <p class="have-seen__all-count-pages">Y</p>
+            <div class="catalog__galary-control">
+              <button class="button" id="have-seen-btn-prev" disabled>
+                <img src="<%=require('./images/arrow-to-right.svg')%>" alt="Стрелочка на право">
+              </button>
+              <button class="button" id="have-seen-btn-next">
+                <img src="<%=require('./images/arrow-to-left.svg')%>" alt="Стрелочка на лево">
+              </button>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+    </main>
+    <div class="empty-box"></div>
+    <footer class="footer">
+      <div class="footer__main">
+        <a href="index.html" class="button">
+          <img src="<%=require('./images/MAROON-logo.svg')%>" alt="лого">
+        </a>
+        <nav class="nav nav_footer">
+          <a class="nav__link" href="catalog.html">Каталог</a>
+          <a class="nav__link" href="not-found.html">О нас</a>
+          <a class="nav__link" href="index.html#contacts">Магазины</a>
+          <a class="nav__link" href="index.html#contacts">Контакты</a>
+        </nav>
+        <div class="social-media">
+          <a class="social-media__link" href="https://www.facebook.com/" target="_blank">
+            <img src="<%=require('./images/facebook.svg')%>" alt="Иконка фэйсбука">
+          </a>
+          <a class="social-media__link" href="https://www.instagram.com/" target="_blank">
+            <img src="<%=require('./images/instagram.svg')%>" alt="Иконка инстаграмма">
+          </a>
+          <a class="social-media__link" href="https://www.twitter.com/" target="_blank">
+            <img src="<%=require('./images/tviter.svg')%>" alt="Иконка твитера">
+          </a>
+        </div>
+      </div>
+      <hr style="width: 100vw; position: absolute; left: 0; margin: 0;">
+      <div class="footer__sign">
+        <p class="footer__sign-text" >Maroon &#169; 2020 Все права защищены</p>
+        <p class="footer__sign-text">Политика конфиденциальности</p>
+      </div>
+    </footer>
+  <!-- </div> -->
+</body>
+</html>

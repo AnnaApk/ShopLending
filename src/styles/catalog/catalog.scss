@@ -1,0 +1,135 @@
+.catalog {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-top: 101px;
+}
+
+.catalog__title-container {
+  @include container-flex-row;
+  margin: 50px auto;
+  max-width: 1170px;
+  padding: 0 30px;
+}
+.catalog__title {
+  @include section-title;
+  // z-index: 5;
+}
+
+.catalog__list {
+  margin: 0;
+  padding: 0;
+
+  display: grid;
+  grid: repeat(1, auto) / repeat(4, 270px);
+  gap: 30px;
+  height: fit-content;
+  overflow: hidden;
+
+  @media (max-width:1200px) {
+    grid: repeat(1, auto) / repeat(3, 270px);
+    width: max-content;
+    margin: 0 auto;
+  }
+  @media (max-width:950px) {
+    grid: repeat(1, auto) / repeat(2, auto);
+    // width: max-content;
+    margin: 0 auto;
+  }
+  @media (max-width:700px) {
+    // grid-row: auto;
+  }
+  @media (max-width:620px) {
+    grid: repeat(1,auto) / repeat(1, auto);
+  }
+
+}
+
+.catalog__product-card,
+.have-seen__product-card {
+  list-style: none;
+
+  width: 270px;
+  height: 350px;
+
+  position: relative;
+
+  @media (max-width:950px) {
+    width: 324px;
+    height: 350px;
+    flex-shrink: 0;
+  }
+  @media (max-width:700px) {
+    width: 290px;
+    height: 290px;
+  }
+}
+
+.catalog__product-img {
+  width: 100%;
+  height: 100%;
+}
+
+.catalog__product-info {
+  position: absolute;
+  z-index: 2;
+
+  bottom: 20px;
+  left: 10%;
+  width: 80%;
+
+  display: grid;
+  grid:  auto auto / 1fr 1fr;
+  row-gap: 10px;
+
+  color: #9A9DA0;
+  font-size: 13px;
+  font-weight: 400;
+}
+.catalog__product-name {
+  margin: 0;
+  color: #122947;
+  font-size: 16px;
+  font-weight: 500;
+}
+.catalog__product-price {
+  justify-self: end;
+  margin: 0;
+  color: #122947;
+  font-size: 13px;
+  font-weight: 500;
+}
+.catalog__product-use {
+  margin: 0;
+}
+.catalog__product-volume {
+  justify-self: end;
+  margin: 0;
+}
+
+.catalog__pages-cntrl {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 35px;
+
+  position: relative;
+  @media (max-width:950px) {
+    justify-content: flex-start;
+  }
+  @media (max-width:550px) {
+    margin-top: 15px;
+  }
+}
+.catalog__hr { 
+  width: 50px;
+  margin: 10px;
+}
+.catalog__galary-control {
+  position: absolute;
+  right: 0;
+  width: 80px;
+
+  @include container-flex-row;
+}
